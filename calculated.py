@@ -7,8 +7,10 @@ from roading_coords import *
 class Converter:
     lenght_road = LengthRoad()
     graph = Graph()
-    opencv = OpenCv()
+    opencv = OpenCvWrapper()
 
+    def analayze_image(self, img):
+        self.opencv.detect_crosroad(img)
 
 # this the main claculated class
 class Calculated:
