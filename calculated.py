@@ -10,7 +10,10 @@ class Converter:
     opencv = OpenCvWrapper()
 
     def analayze_image(self, img):
-        self.opencv.detect_crosroad(img)
+        has_crossroad = self.opencv.detect_crosroad(img)
+
+        print(has_crossroad)
+
 
 # this the main claculated class
 class Calculated:
